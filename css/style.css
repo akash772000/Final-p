@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* ===================================================  Common-CSS-Start   =================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Albert Sans", sans-serif;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+:root {
+    /* --primary-color: #84C1FF; */
+}
+html{
+    font-size: 62.5%;
+    /* 10px fixed */
+}
+html,body{
+    overflow-x: hidden;
+    overflow-y: auto;  
+}
+section,
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width:1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.common-padding{
+    padding:10.0rem 0;
+    
+}
+.row{
+    margin: 0 -15px;
+}
+.section-padding{
+    padding: 50px 0;
+}
+
+/* ===================================================   Common-CSS-End   =================================================*/
+/* ===================================================   Header-Navbar   =================================================*/
+nav{
+    /* background-color: aqua; */
+    padding: 16px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+ 
+
+}
+.logo_part .logo{
+    min-width: 172px;
+    width: 100%;
+}
+.navbar .logo_part .toggler{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.toggler{
+    display: none;
+}
+
+.navlist ul{
+    display: flex;
+    align-items: center;
+}
+.navlist ul li{
+    margin: 0 26.5px;
+}
+.navlist ul li a{
+  font-size: 1.6rem;  
+  color: #FFFFFF;
+
+}
+.navlist ul li :hover{
+    color: black;
+    background: white;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.navlist ul .active {
+    
+    padding: 5px;
+    background-color: rgba(136, 136, 136,0.5);
+  }
+.navlist ul  .btn-contact{
+    border: 1px solid white;
+    padding: 11px 13px;
+    
+}
+.navlist ul  .btn-contact a{
+    border-right: 2px solid white;
+    padding-right: 10px;
+}
+.navlist ul  .btn-contact i{
+    padding-left:10px ;
+    font-size: 1.6rem;
+    color: white;
+}
+/* ===================================================   Header-Navbar-End  =================================================*/
+/* ===================================================   Banner-Start  =================================================*/
+.banner{
+    background-image: url("../images/banner_img1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.banner_main .heading{
+   width: 50%;
+   position: relative;
+   z-index: 3;
+
+
+ 
+}
+.banner .img{
+    position: absolute;
+    top: 20%;
+    right: -5%;
+    z-index: 2;
+    max-width:972px;
+    width: 100%;
+    min-height: 733px;
+    height: 100%;
+}
+
+.banner .banner_main{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+  
+}
+.banner .banner_main .heading:nth-child(1){
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #FFFFFF;  
+    margin-bottom: 27px; 
+}
+.banner .banner_main .heading h1{
+    font-size: 7.2rem;
+    font-weight: bold;
+    color: #FFFFFF;  
+    margin-bottom: 45px; 
+}
+.banner .banner_main .heading .third{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFFFFF;  
+    line-height: 32px; 
+}
+
+.banner_main .heading h1{
+    position: relative;
+   
+}
+.banner_main .heading h1::after{
+    content: "";
+    position: absolute;
+    border: 3px solid #DE5107;
+    width: 8%;
+    bottom: -20%;
+    left: 0;
+}
+/* ===================================================   Banner-End  =================================================*/
+
+/* ===================================================   Collab-Start   =================================================*/
+
+.collab-main{
+    display: flex;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 5%;
+
+}
+.collab-main .image-container{
+    width: 50%;
+    padding-right: 35px;
+}
+.collab-main .text-container{
+    padding-left: 35px;
+    width:50% ;
+
+}
+.collab-main .text-container h2{
+    /* width:60%; */
+       font-size: 6.4rem;
+   color: black;
+   margin-bottom: 64px;
+   position: relative;
+
+
+}
+.collab-main .text-container p{
+    /* width:60%; */
+       font-size: 1.8rem;
+   color: #2E2E2E;
+   margin-bottom: 52px;
+   position: relative;
+
+
+}
+.collab-main .text-container h2 span{
+color: #068C34;
+    
+ }
+
+
+ .collab-main .text-container h2::after{
+    content: "";
+    position: absolute;
+    border: 3px solid #DE5107;
+    width: 30%;
+    bottom: -15%;
+    left: -20%;
+}
+.collab-main .text-container p::before{
+    content: "";
+    position: absolute;
+    border: 1px solid #0086BF;
+    width: 20px;
+    top: 20%;
+    left: -7%;
+}
+.collab-main .text-container .btn{
+    width: 68%;
+    border: 1px solid black;
+    padding: 18px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.collab-main .text-container .btn a{
+    font-size: 1.6rem;
+    color: #001924;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+.collab-main .text-container .btn i{
+    font-size: 1.6rem;
+    
+}
+
+.text-container .btn a:hover{
+color: blue;
+   
+}
+/* Collab-1 end */
+
+/* collab-2 start */
+
+.collab-2{
+    background-image: url("../images/Rectangle\ 14.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.collab-main-2{
+    display: flex;
+    width: 100%;
+
+}
+.collab-main-2 .image-container{
+    width: 40%;
+
+    padding-left: 35px;
+}
+.collab-main-2 .text-container{
+    padding-right: 35px;
+    width:60% ;
+
+}
+.collab-main-2 .text-container h2{
+    /* width:60%; */
+       font-size: 4.8rem;
+   color: white;
+   font-weight: 700;
+   margin-bottom: 64px;
+   position: relative;
+
+
+}
+
+.collab-main-2 .text-container h2::after{
+    content: "";
+    position: absolute;
+    border: 1px solid #DE5107;
+    width: 5%;
+    bottom: -20%;
+    left: 0%;
+}
+.collab-main-2 .text-container p{
+    /* width:60%; */
+       font-size: 1.8rem;
+   color: white;
+   margin-bottom: 40px;
+   position: relative;
+
+
+}
+.collab-main-2 .text-container p::before{
+    content: "";
+    position: absolute;
+    border: 1px solid #0086BF;
+    width: 20px;
+    top: 20%;
+    left: -7%;
+}
+.collab-main-2 .text-container .btn{
+    width: 60%;
+    border: 1px solid white;
+    padding: 18px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.collab-main-2 .text-container .btn a{
+    font-size: 1.6rem;
+    color: white;
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
+.collab-main-2 .text-container .btn i{
+    font-size: 1.6rem;
+    color: white;
+   
+}
+.collab-main-2 .btn a:hover{
+    color: blue;
+}
+/* collab-2 -end */
+
+/* collab-holding */
+
+.holding .heading{
+    text-align: center;
+    width: 90%;
+}
+.holding .heading h2{
+    font-size: 4.8rem;
+    margin-bottom: 52px;
+    position: relative;
+}
+.holding .heading h2::after{
+    content: "";
+    position: absolute;
+    border: 3px solid #DE5107;
+    width: 5%;
+    bottom: -20%;
+    left: 50%;
+}
+
+.holding .heading h2 span{
+    color:#068C34 ;
+}
+.holding .heading p{
+    font-size: 1.8rem;
+    color: #2E2E2E;
+    line-height: 32px;
+}
+.holding-main{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* border: 1px solid black; */
+ 
+}
+.holding-main .left-contain h3{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #001E2A;
+    position: relative;
+    margin-bottom: 20px;
+}
+.holding-main .left-contain h3::after{
+    content: "";
+    position: absolute;
+    border: 2px solid #DE5107;
+    width: 10%;
+    bottom: -20%;
+    left: 0%;
+}
+.holding-main .right-contain h3{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #001E2A;
+    position: relative;
+  
+}
+.holding-main .right-contain h3::after{
+    content: "";
+    position: absolute;
+    border: 2px solid #DE5107;
+    width: 10%;
+    bottom: -20%;
+    left: 0%;
+}
+
+
+.holding-main .left-contain{
+    width: 50%;
+    text-align: start;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.holding-main .right-contain{
+    width: 50%;
+    text-align: start;
+    /* border: 1px solid black; */
+    padding: 10px;
+    align-self: flex-start;
+}
+.holding-main .left-contain .first_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #9A9A9A;
+}
+.holding-main .left-contain .first_row p{
+    font-size: 2.4rem;
+    color: #2E2E2E;
+}
+.holding-main .left-contain .first_row i{
+    font-size: 1.4rem;
+    color: #0086BF;
+}
+.holding-main .right-contain .first_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #9A9A9A;
+}
+.holding-main .right-contain .first_row p{
+    font-size: 2.4rem;
+    color: #2E2E2E;
+}
+.holding-main .right-contain .first_row i{
+    font-size: 1.4rem;
+    color: #0086BF;
+}
+
+
+
+/* collab-holding-end */
+
+
+/* ===================================================   Responsive-Start   =================================================*/
+@media (max-width: 1199px){
+    html{
+        font-size: 52.5%;
+    }
+
+      
+}
+@media (max-width: 991px){
+    html{
+        font-size: 42.5%;
+    }
+    .collab-main{
+      
+      padding-top: 25%;
+    
+    }
+    .banner .img{
+        position: absolute;
+        top: 30%;
+        left: -1%;
+       
+        height: 100%;
+    }
+    
+   img{
+    height: 60%;
+   }
+   .banner .banner_main .heading{
+    padding-top: 10%;
+   }
+   
+
+      
+      
+
+
+    .navbar{
+        flex-direction: column;
+        align-items: start;
+    }
+     .navlist ul{
+        flex-direction: column;
+        align-items: start;
+    }
+    .navbar .logo_part{
+      
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo_part .logo{
+       
+        width: 10%;
+    }
+
+    .toggler{
+        display: block;
+        
+    
+    } 
+    .navlist{
+        background-color: white;
+        width: 100%;
+        display: none;
+      
+    }
+   
+    .navlist ul li{
+        margin: 10px 0;
+     
+    }
+    .navlist ul li a{
+        color: black;
+        font-size: 10px;
+    }
+  
+    .navlist ul  .btn-contact a{
+        border-right: 2px solid black;
+        padding-right: 10px;
+    }
+    .navlist ul  .btn-contact i{
+        padding-left:10px ;
+        font-size: 1.6rem;
+        color: black;
+    }
+    .showList{
+        display: block;
+       
+    }
+    .collab-main{
+       flex-direction: column;
+       align-items: center;
+       padding: 5%;
+    
+    }
+    .collab-main .text-container{
+        margin-top: 20px;
+        width: 100%;
+    }
+    /* .collab-main .text-container h2::after{
+      
+    
+        left: -10%;
+    }
+    .collab-main .text-container p::before{
+       
+        top: 20%;
+        left: -5%;
+    } */
+    .collab-main .text-container h2{  
+       margin-bottom: 54px;
+    }
+    .collab-main .text-container p{
+       margin-bottom: 42px;
+    }
+    .collab-main .text-container .btn{
+        width: 50%;
+     
+    }
+    .collab-main-2{
+        flex-direction: column;
+        align-items: center;
+       
+     
+     }
+     .collab-main-2 .text-container{
+      width: 80%;
+      padding: 0;
+     }
+     .collab-main-2 .image-container{
+        padding: 0;
+    
+     }
+     .navlist ul  .btn-contact{
+        border: 1px solid black;
+        padding: 11px;
+        
+    }
+    .navlist ul {
+        padding: 10px;
+    }
+   
+
+}
+@media (max-width: 767px){
+    html{
+        font-size: 32.5%;
+    }
+    .collab-main .text-container h2{  
+        margin-bottom: 44px;
+     }
+     .collab-main .text-container p{
+        margin-bottom: 32px;
+     }
+     .banner .banner_main .heading{
+        width: 100%;
+     }
+  
+.banner .banner_main .heading .third {
+  font-size: 16px;
+}
+.holding .heading p{
+   font-size: 16px;
+}
+
+
+
+}
+@media (max-width: 575px){
+    html{
+        font-size: 25.5%;
+    }
+    .banner .banner_main .heading{
+        padding-top: 20%;
+       }
+
+    .collab-main .text-container h2::after{
+    
+        width: 20%;
+      
+    }
+  
+    .collab-main .text-container p{
+        font-size: 12px;
+    }
+    .collab-main .text-container p::before{
+     
+        width: 15px;
+        top: 20%;
+        left: -8%;
+    }
+    .text-container .btn{
+        width: 68%;
+      
+    }
+    .text-container .btn a{
+     
+       
+        padding-right: 15px;
+        border-right: 1px solid black;
+    }
+    .collab-main .text-container h2{  
+        margin-bottom: 34px;
+     }
+     .collab-main .text-container p{
+        margin-bottom: 22px;
+     }
+   
+    .collab-main-2 .text-container p::before{
+     
+        width: 15px;
+        top: 20%;
+        left: -8%;
+    }
+    .collab-main-2 .text-container h2::after{
+      
+        width: 20%;
+        left: -20%;
+    
+
+
+}
+.collab-main-2 .text-container p{
+    font-size: 12px;
+}
+
+.collab-main-2 .text-container .btn a{
+    font-size: 10px;
+}
+.collab-main .text-container .btn a{
+    font-size: 10px;
+}
+.toggler i{
+    font-size: 20px;
+}
+.holding .heading p{
+    font-size: 10px;
+ }
+ .holding .heading h2::after{
+
+    width: 8%;
+  
+    left: 45%;
+}
+.collab-main-2 .image-container{
+   
+    width: 70%;
+ }
+ .collab-main .image-container{
+   
+    width: 70%;
+ }
+ .holding-main{
+ flex-direction: column;
+ align-self: flex-start;
+ width: 100%;
+ 
+}
+.holding-main .left-contain{
+    width: 100%;
+}
+.holding-main .right-contain{
+    width: 100%;
+}
+
+}
+@media (max-width: 320px){
+    .banner .banner_main .heading{
+        padding-top: 25%;
+       }
+    .collab-main-2 .text-container p::before{
+     
+      
+        left: -10%;
+    }
+}
+/* ===================================================   Responsive-End   =================================================*/
